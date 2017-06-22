@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LabCar - Proyecto Final</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+    
+</head>
+<body>
+  <!--NAVBAR -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mi-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
+      </div>
+
+      <!-- links y burger para mobile -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item"><a href="viaja" class="nav-link page-scroll">Viaja</a></li>
+          <li class="nav-item"><a href="conduce" class="nav-link page-scroll">Conduce</a></li>
+          <li class="nav-item"><a href="inicio" class="nav-link page-scroll">Iniciar Sesión</a></li>
+        </ul>
+      </div><!-- cierre navbar -->
+    </div><!-- cierre container -->
+  </nav>
+  <!-- PRIMERA SECCION: HOME -->
+  <section class="sec-1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-offset-7 col-md-5 col-sm-5 col-xs-12 yellow-box">
+          <div class="text">
+            <h1>Disfruta del viaje</h1>
+            <h1>Eres dueño de tu tiempo</h1>
+          </div>
+          
+          <h3>Viaja con <img src="assets/img/logo-blanco.png" alt="logo-blanco"></h3>
+          <h4>REGÍSTRATE</h4>
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+              <input type="text" name="" value="" class="underline">
+            </div><!-- cierre col caja -->
+            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+              <p>O bien</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+              <input type="text" name="" value="" class="underline">
+            </div>
+            <button type="button" class="btn btn-default">Conviértete en conductor</button>
+          </div><!-- cierre row caja -->
+        </div><!-- cierre col -->
+      </div><!-- cierre row -->
+    </div><!-- cierre container -->
+  </section>
+
+  <!-- SEGUNDA SECCION: DESCARGA -->
+  <section class="sec-2" id="descarga-app">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 col-sm-5 col-xs-1">
+          <img src="assets/img/celular.png" class="phone img-responsive" alt="phone">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <h3>Descarga la nueva app</h3>
+          <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+          <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+        </div>
+      </div><!-- cierre row -->
+    </div><!-- cierre container -->
+  </section>
+  <!-- TERCERA SECCION: CONDUCE -->
+  <section class="sec-3" id="conduce">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-offset-8 col-md-4 col-sm-4 col-xs-12">
+          <h4>Conduce cuando quieras</h4>
+          <p>LabCar es una opción flexible para alcanzar tus metas financieras.
+          </p>
+          <button type="button" class="btn btn-default">Conviértete en conductor</button>
+        </div><!-- cierre col -->
+      </div><!-- cierre row -->
+    </div><!-- cierre container -->
+  </section>
+  <!-- CUARTA SECCION: TARIFAS -->
+  <section class="sec-4" id="tarifas">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4>Tarifas</h4>
+          <p>Consulta las tarifas LabCar aquí</p>
+          <span id="circulo"><img src="assets/img/circulo.png" alt="circulo"></span>
+          <input type="text" class="input-tarifa" id="origen" placeholder="Ingrese su punto de partida"><br>
+          <span id="flecha"><img src="assets/img/flecha.png" alt="flecha"></span>
+          <input type="text" class="input-tarifa" id="destino" placeholder="Ingrese su destino"><br>
+          <div class="trazar-ruta">
+            <button class="btn" id="route">¡TRAZAR RUTA!</button>
+          </div>
+          <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+            <!-- acá llamaremos al mapa -->
+            <div class="mapa">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+      <!-- logo blanco labcar -->
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <img src="assets/img/logo-blanco.png" class="img-responsive logo" alt="">
+        </div>
+      </div>
+      <!-- linea -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="line text-center"><hr></div>
+        </div>
+      </div>
+      <!-- social media iconos -->
+      <div class="row">
+        <div class="col-md-3 col-sm-12 col-xs-12 social-icons">
+           <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-apple" aria-hidden="true"></i>
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </div><!-- cierre col iconos -->
+      </div><!-- cierre row iconos -->
+      <!-- links -->
+      <div class="col-md-3 col-sm-12 col-xs-12 links">
+        <ul>
+            <li><a href="#">Viaja</a></li>
+            <li><a href="#">Conduce</a></li>
+            <li><a href="#">Ciudades</a></li>
+            <li><a href="#">Tarifas</a></li>
+            <li><a href="#">Entregas</a></li>
+            <li><a href="#">Cómo funciona</a></li>
+            <li><a href="#">Países</a></li>
+            <li><a href="#">Seguridad</a></li>
+        </ul>
+      </div><!-- cierre col -->
+      <div class="col-md-3 col-sm-12 col-xs-12 info">
+        <ul>
+            <li><a href="#">Oportunidades</a></li>
+            <li><a href="#">Nuestra historia</a></li>
+            <li><a href="#">API de LabCar</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Desarrolladores</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Laboratoria</a></li>
+            <li><a href="#">Coders</a></li>
+        </ul>
+      </div>
+      <!-- download apps -->
+      <div class="col-md-3 col-sm-12 col-xs-12 download-app">
+        <img src="assets/img/app-store.png" class="app img-responsive" alt="app store">
+        <img src="assets/img/app-store.png" class="app img-responsive" alt="google play">
+      </div>
+      <!-- linea -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="line text-center"><hr></div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <p>© 2017 LabCar technologies Inc.</p>
+      </div>
+    </div><!-- cierre container -->
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- daba error sin jquery en consola -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  
+</body>
+</html>

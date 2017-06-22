@@ -1,0 +1,82 @@
+/* 
+Color-lab: #f7b617
+Color gris (footer): #2b2b2b 
+*/
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* NAVBAR */
+
+nav.navbar.navbar-default {
+    background-color: #fff;
+    padding:1%;
+    border:none;
+}
+
+a.navbar-brand {
+    padding-left: 150px;
+}
+
+/* PRIMERA SECCION */
+
+.sec-1{
+  background: url("../img/taxi.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width:100vw;
+  height:100vh;
+}
+
+.yellow-box{
+  background-color:#f7b617;
+  color:#fff;
+  padding:20px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.yellow-box .text{
+
+}
+
+/* SEGUNDA SECCION */
+
+.sec-2{
+  background-color:#f7b617;
+  padding:5%;
+
+}
+
+/* TERCERA SECCION */
+
+.sec-3{
+  background: url('../img/conduce.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width:100vw;
+  height:100vh;
+  color:#fff;
+}
+
+.sec-3 button{
+  background-color:#f7b617;
+  border:none;
+  color:#fff;
+}
+
+/* CUARTA SECCION */
+
+
+/* FOOTER */
