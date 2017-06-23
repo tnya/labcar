@@ -33,7 +33,7 @@ a.navbar-brand {
   background: url("../img/taxi.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom;
   width:100vw;
   height:100vh;
 }
@@ -55,7 +55,12 @@ a.navbar-brand {
 .sec-2{
   background-color:#f7b617;
   padding:5%;
+}
 
+.frame{
+  border: 1px solid white;
+  margin-left: -74px;
+  padding: 4%;
 }
 
 /* TERCERA SECCION */
@@ -64,9 +69,9 @@ a.navbar-brand {
   background: url('../img/conduce.jpg');
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   width:100vw;
-  height:100vh;
+  height:70vh;
   color:#fff;
 }
 
@@ -80,3 +85,7 @@ a.navbar-brand {
 
 
 /* FOOTER */
+
+footer{
+  background: #2b2b2b;
+}
