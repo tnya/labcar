@@ -34,22 +34,50 @@ a.navbar-brand {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-attachment: fixed;
   width:100vw;
   height:100vh;
 }
-
+#home .container{
+  padding:5% 3%;
+}
 .yellow-box{
-  background-color:#f7b617;
-  color:#fff;
-  padding:20px;
-  margin-top:50px;
-  margin-bottom:50px;
+  background-color: #f7b617;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-top: 85px;
+  padding-left: 44px;
+  padding-bottom: 37px;
 }
 
-.yellow-box .text{
-
+.yellow-box h4,h3{
+  margin-top: 40px;
+}
+.yellow-box h1{
+  font-weight:bolder;
 }
 
+.underline{
+  width:100%;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  background-color: #f7b617;
+  margin-top: 10px;
+ }
+
+.btn-yellow-box {
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: 15px;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  float:left;
+}
 /* SEGUNDA SECCION */
 
 .sec-2{
@@ -58,11 +86,18 @@ a.navbar-brand {
 }
 
 .frame{
-  border: 1px solid white;
+  border: 2px solid white;
   margin-left: -74px;
   padding: 4%;
+  color:white;
+  font-size: 20px;
 }
 
+.phone-text p{
+  margin: 42px 0 10px;
+  line-height: 25px;
+  width: 341px;
+}
 /* TERCERA SECCION */
 
 .sec-3{
@@ -70,22 +105,114 @@ a.navbar-brand {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   width:100vw;
   height:70vh;
   color:#fff;
+}
+
+.transparent{
+  background-color: rgba(0,0,0,0.55);
+  padding:5%;
+  height: 70vh;
+}
+.transparent h4{
+  font-size: 28px;
+  padding-bottom: 7px;
+}
+.transparent p{
+  font-size: 16px;
+  padding-bottom: 10px;
 }
 
 .sec-3 button{
   background-color:#f7b617;
   border:none;
   color:#fff;
+  padding:5%;
+  font-size:16px;
 }
 
 /* CUARTA SECCION */
 
+#tarifas{
+  color:#fff;
+  background-color: #f7b617;
+  font-size: 16px;
+  padding: 4% 5%;
+}
+
+#tarifas input{
+  background-color: #f7b617;
+  border-radius:4px;
+  border-color: #fff;
+  border-style: solid;
+  padding:10px;
+  width:60%;
+}
+
+#tarifas button{
+  border: none;
+  margin: 25px 49px;
+  padding: 10px;
+  width: 140px;
+  background:#fff;
+}
+.row .input{
+  padding: 12px 4px;
+}
+
+/* MAP */
+
+.map{
+  width: 430px;
+  border: 2px solid white;
+  padding: 1%;
+  margin-left: 5%;
+}
+
+#map{
+  width: 400px;
+  height: 350px;
+}
 
 /* FOOTER */
 
 footer{
   background: #2b2b2b;
+  color:#fff;
 }
+
+footer p{
+  font-size: 16px;
+}
+footer .container-fluid{
+  padding:6% 8%;
+}
+.social-icons{
+  display:inline-block;
+  margin-top: 27%;
+}
+.social-icons i{
+  padding:3px;
+  cursor:pointer;
+}
+.links ul{
+  list-style: none;
+  color:#fff;
+}
+.links ul li{
+  padding: 10px;
+}
+.links ul li a{
+  color:#fff;
+  font-size: 16px;
+}
+.app{
+  margin-top: 35px;
+  cursor:pointer;
+}
+.download-app {
+  margin-top: 131px;
+}
+

@@ -37,29 +37,33 @@
     </div><!-- cierre container -->
   </nav>
   <!-- PRIMERA SECCION: HOME -->
-  <section class="sec-1">
+  <section class="sec-1" id="home">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-offset-7 col-md-5 col-sm-5 col-xs-12 yellow-box">
-          <div class="text">
+        <div class="col-md-offset-7 col-lg-5 col-md-offset-7 col-md-5 col-sm-5 hidden-xs">
+          <div class="yellow-box">
             <h1>Disfruta del viaje</h1>
             <h1>Eres dueño de tu tiempo</h1>
-          </div>
-          
-          <h3>Viaja con <img src="assets/img/logo-blanco.png" alt="logo-blanco"></h3>
-          <h4>REGÍSTRATE</h4>
-          <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-              <input type="text" name="" value="" class="underline">
-            </div><!-- cierre col caja -->
-            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-              <p>O bien</p>
+            <h3>Viaja con <img src="assets/img/logo-blanco.png" alt="logo-blanco"></h3>
+            <h4>REGÍSTRATE</h4>
+            <div class="row text-center">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                <input type="text" name="" value="" class="underline">
+              </div><!-- cierre col caja -->
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                <p>O bien</p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                <input type="text" name="" value="" class="underline">
+              </div>
+              <button type="button" class="btn btn-default btn-yellow-box">Conviértete en conductor</button>
+            </div><!-- cierre col -->
+            <div class="hidden-lg hidden-md hidden-sm col-xs-offset col-xs-9 register">
+              <h1 class="mt-0">Comienza a viajar con</h1>
+              <span><img src="assets/img/logo-blanco.png" alt=""></span>
+              <button class="btn btn-default">Descarga el App</button>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-              <input type="text" name="" value="" class="underline">
-            </div>
-            <button type="button" class="btn btn-default">Conviértete en conductor</button>
-          </div><!-- cierre row caja -->
+          </div><!-- cierre yellow box -->
         </div><!-- cierre col -->
       </div><!-- cierre row -->
     </div><!-- cierre container -->
@@ -73,8 +77,8 @@
           <div class="col-md-5 col-sm-5 col-xs-1">
           <img src="assets/img/celular.png" class="phone img-responsive" alt="phone">
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <h3>Descarga la nueva app</h3>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 phone-text">
+          <h3><strong>Descarga la nueva app</strong></h3>
           <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
           <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
         </div>
@@ -87,11 +91,11 @@
   <section class="sec-3" id="conduce">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-offset-8 col-md-4 col-sm-4 col-xs-12">
-          <h4>Conduce cuando quieras</h4>
+        <div class="col-lg-offset-8 col-lg-4 col-md-offset-8 col-md-4 col-sm-4 col-xs-12 transparent">
+          <h4><strong>Conduce cuando quieras</strong></h4>
           <p>LabCar es una opción flexible para alcanzar tus metas financieras.
           </p>
-          <button type="button" class="btn btn-default">Conviértete en conductor</button>
+          <button type="button" class="btn btn-default"><strong>Conviértete en conductor</strong></button>
         </div><!-- cierre col -->
       </div><!-- cierre row -->
     </div><!-- cierre container -->
@@ -99,34 +103,51 @@
 
   <!-- CUARTA SECCION: TARIFAS -->
   <section class="sec-4" id="tarifas">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <h4>Tarifas</h4>
-          <p>Consulta las tarifas LabCar aquí</p>
-          <span id="circulo"><img src="assets/img/circulo.png" alt="circulo"></span>
-          <input type="text" class="input-tarifa" id="origen" placeholder="Ingrese su punto de partida"><br>
-          <span id="flecha"><img src="assets/img/flecha.png" alt="flecha"></span>
-          <input type="text" class="input-tarifa" id="destino" placeholder="Ingrese su destino"><br>
-          <div class="trazar-ruta">
-            <button class="btn" id="route">¡TRAZAR RUTA!</button>
+ <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3><strong>Tarifas</strong></h3>
+            <h5>Consulta las tarifas LabCar aquí</h5>
+            <br>
+            <div class="row input">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
+                <img src="assets/img/circulo.png" class="img-responsive" alt="circulo">
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-10">
+                <input type="text" id="origen" placeholder="Ingrese punto de partida">
+              </div>
+            </div>
+            <div class="row input">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
+                <img src="assets/img/flecha.png" class="img-responsive" alt="flecha">
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-10">
+                <input type="text" id="destino" placeholder="Ingrese un destino">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button type="button" id="ruta" class="btn btn-default">¡TRAZA RUTA!</button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div id="costo-viaje"></div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-            <!-- acá llamaremos al mapa -->
-            <div class="mapa">
-              <div id="map"></div>
+          <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs map">
+            <div id="map">
+              <!-- Aqui va el mapa-->
             </div>
           </div>
         </div>
       </div>
   </section>
-
   <!-- FOOTER -->
   <footer>
     <div class="container-fluid">
       <div class="row">
       <!-- logo blanco labcar -->
-        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <img src="assets/img/logo-blanco.png" class="img-responsive logo" alt="">
         </div>
       </div>
@@ -138,16 +159,15 @@
       </div>
       <!-- social media iconos -->
       <div class="row">
-        <div class="col-md-3 col-sm-12 col-xs-12 social-icons">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 social-icons">
            <i class="fa fa-facebook" aria-hidden="true"></i>
             <i class="fa fa-twitter" aria-hidden="true"></i>
             <i class="fa fa-linkedin" aria-hidden="true"></i>
             <i class="fa fa-apple" aria-hidden="true"></i>
             <i class="fa fa-play" aria-hidden="true"></i>
         </div><!-- cierre col iconos -->
-      </div><!-- cierre row iconos -->
       <!-- links -->
-      <div class="col-md-3 col-sm-12 col-xs-12 links">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 links">
         <ul>
             <li><a href="#">Viaja</a></li>
             <li><a href="#">Conduce</a></li>
@@ -159,7 +179,7 @@
             <li><a href="#">Seguridad</a></li>
         </ul>
       </div><!-- cierre col -->
-      <div class="col-md-3 col-sm-12 col-xs-12 info">
+      <div class="col-lg-3 col-md-3 col-sm-12 hidden-xs links">
         <ul>
             <li><a href="#">Oportunidades</a></li>
             <li><a href="#">Nuestra historia</a></li>
@@ -171,11 +191,17 @@
             <li><a href="#">Coders</a></li>
         </ul>
       </div>
+      <!--  -->
       <!-- download apps -->
-      <div class="col-md-3 col-sm-12 col-xs-12 download-app">
+      <div class="col-lg-3 col-md-3 col-sm-12 hidden-xs download-app">
         <img src="assets/img/app-store.png" class="app img-responsive" alt="app store">
         <img src="assets/img/google-play.png" class="app img-responsive" alt="google play">
       </div>
+      <div class="hidden-lg hidden-md hidden-sm col-sm-3 col-xs-6 download-app-responsive">
+        <img src="assets/img/app-store.png" class="app img-responsive" alt="app store">
+        <img src="assets/img/google-play.png" class="app img-responsive" alt="google play">
+      </div>
+
       <!-- linea -->
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -189,10 +215,15 @@
     </div><!-- cierre container -->
   </footer>
 
-
+  <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- daba error sin jquery en consola -->
+  <!-- JS bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- JS file -->
   <script src="assets/js/main.js"></script>
+  <!-- API GOOGLE MAPS -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxBOGLBSij-9eb6fyiXOYN1wk4SI19nok&callback=initMap&libraries=places"></script>
+
   
 </body>
 </html>
