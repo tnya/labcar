@@ -1,218 +1,243 @@
-/* 
-Color-lab: #f7b617
-Color gris (footer): #2b2b2b 
-*/
-
-*{
-  margin:0;
-  padding:0;
-}
-
-body{
-  padding: 0;
-  margin: 0 auto;
-  overflow-x: hidden;
-  font-family: 'Raleway', sans-serif;
-}
-
-/* NAVBAR */
-
-nav.navbar.navbar-default {
-    background-color: #fff;
-    padding:1%;
-    border:none;
-}
-
-a.navbar-brand {
-    padding-left: 150px;
-}
-
-/* PRIMERA SECCION */
-
-.sec-1{
-  background: url("../img/taxi.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: fixed;
-  width:100vw;
-  height:100vh;
-}
-#home .container{
-  padding:5% 3%;
-}
-.yellow-box{
-  background-color: #f7b617;
-  color: #fff;
-  padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-top: 85px;
-  padding-left: 44px;
-  padding-bottom: 37px;
-}
-
-.yellow-box h4,h3{
-  margin-top: 40px;
-}
-.yellow-box h1{
-  font-weight:bolder;
-}
-
-.underline{
-  width:100%;
-  border-top:none;
-  border-left:none;
-  border-right:none;
-  background-color: #f7b617;
-  margin-top: 10px;
- }
-
-.btn-yellow-box {
-  background-color: #fff;
-  margin-top: 20px;
-  margin-left: 15px;
+/* NAV */
+.navbar-default{
+  background: white;
   border: none;
-  padding: 20px;
-  font-size: 16px;
-  font-weight: 800;
-  float:left;
+  padding: 2% 8% 2% 10%;
 }
-/* SEGUNDA SECCION */
+
+.glyphicon-menu-hamburger{
+  border: white;
+}
+
+.mi-logo{
+  width: 80%;
+}
+
+.links-nav{
+  margin: 11% 0;
+}
+
+
+/* PRIMERA SECCION: HOME */
+
+.background{
+  height: 110vh;
+  background: url(../img/taxi.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.register{
+  margin-top: 20%;
+  padding: 4% 7% 8% 7%;
+  background: #f7b617;
+  color: white;
+  position: relative;
+  left: 3%;
+}
+
+.title-register{
+  padding-bottom: 8%;
+  font-size: 2.7rem;
+}
+
+.text{
+  font-size: 2rem;
+}
+
+.labcar-logo{
+  width: 20%;
+  margin-left: 2%;
+}
+
+.register-title{
+  font-size: 2.5rem;
+}
+
+.registrate{
+  margin: 4% 0;
+}
+
+#download{
+  color: black;
+  font-weight: bolder;
+  background: white;
+  padding: 2%;
+}
+
+
+/* SEGUNDA SECCION: DESCARGA */
 
 .sec-2{
-  background-color:#f7b617;
-  padding:5%;
+  padding: 3% 0;
+  background: #f7b617;
+  color: white;
 }
 
 .frame{
-  border: 2px solid white;
-  margin-left: -74px;
-  padding: 4%;
-  color:white;
-  font-size: 20px;
+  border: 1px solid white;
+  left: -1px;
+  padding: 3%;
 }
 
-.phone-text p{
-  margin: 42px 0 10px;
-  line-height: 25px;
-  width: 341px;
+.frame-mobile{
+  margin: 2% 4%;
+  border: 1px solid white;
+  padding: 8% 3%;
 }
-/* TERCERA SECCION */
 
-.sec-3{
-  background: url('../img/conduce.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
+.new-app{
+  font-size: 1.5rem;
+}
+
+.new-app-mobile{
+  font-size: 2rem;
+}
+
+.celu{
+  width: 70%;
+}
+
+.cont-info{
+  padding-right: 13%;
+}
+
+.letter-info{
+  font-size: 120%;
+}
+
+
+/* TERCERA SECCION: CONDUCE */
+
+.conduce{
+  height: 64vh;
+  background-image: url(../img/conduce.jpg);
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  width:100vw;
-  height:70vh;
-  color:#fff;
+  background-repeat: no-repeat;
 }
 
-.transparent{
-  background-color: rgba(0,0,0,0.55);
-  padding:5%;
-  height: 70vh;
-}
-.transparent h4{
-  font-size: 28px;
-  padding-bottom: 7px;
-}
-.transparent p{
-  font-size: 16px;
-  padding-bottom: 10px;
+.title-conduce{
+  padding: 6% 3%;
+  height: 64vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
-.sec-3 button{
-  background-color:#f7b617;
-  border:none;
-  color:#fff;
-  padding:5%;
-  font-size:16px;
+.text-conduce{
+  font-size: 120%;
 }
 
-/* CUARTA SECCION */
-
-#tarifas{
-  color:#fff;
-  background-color: #f7b617;
-  font-size: 16px;
-  padding: 4% 5%;
+#btn-conductor{
+  background: #f7b617;
+  margin-top: 2%;
+  font-weight: bold;
+  padding: 2% 4%;
 }
 
-#tarifas input{
-  background-color: #f7b617;
-  border-radius:4px;
-  border-color: #fff;
-  border-style: solid;
-  padding:10px;
-  width:60%;
+
+/* CUARTA SECCION: TARIFAS */
+
+.tarifas{
+  background: #f7b617;
+  color: white;
 }
 
-#tarifas button{
-  border: none;
-  margin: 25px 49px;
-  padding: 10px;
-  width: 140px;
-  background:#fff;
-}
-.row .input{
-  padding: 12px 4px;
-}
-
-/* MAP */
-
-.map{
-  width: 430px;
-  border: 2px solid white;
-  padding: 1%;
-  margin-left: 5%;
+.mapa{
+  width: 90%;
+  padding: 2%;
+  margin: 8% 5% 8% 0;
+  border: 1px solid white;
 }
 
 #map{
-  width: 400px;
-  height: 350px;
+  width: 100%;
+  height: 60vh;
+}
+
+.fares-content{
+  padding: 6% 7%;
+}
+
+.fare-font{
+  font-size: 2rem;
+}
+
+.consulta{
+  font-size: 120%;
+}
+
+#circle, #arrow{
+  margin-right: 4%;
+}
+
+input{
+  width: 70%;
+  padding: 2%;
+  background: #f7b617;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+#route{
+  background: white;
+  border: white;
+  color: black;
+  font-weight: bold;
+}
+
+.route-content{
+  margin-left: 30%;
 }
 
 /* FOOTER */
 
 footer{
   background: #2b2b2b;
-  color:#fff;
+  color: white;
+  padding: 5% 7%;
 }
 
-footer p{
-  font-size: 16px;
+.social-media{
+  margin-top: 29%;
 }
-footer .container-fluid{
-  padding:6% 8%;
+
+.social{
+  width: 3vh;
+  background: #2b2b2b;
+  border: #2b2b2b;
 }
-.social-icons{
-  display:inline-block;
-  margin-top: 27%;
-}
-.social-icons i{
-  padding:3px;
-  cursor:pointer;
-}
-.links ul{
+
+.list{
   list-style: none;
-  color:#fff;
-}
-.links ul li{
-  padding: 10px;
-}
-.links ul li a{
-  color:#fff;
-  font-size: 16px;
-}
-.app{
-  margin-top: 35px;
-  cursor:pointer;
-}
-.download-app {
-  margin-top: 131px;
 }
 
+.li-foot{
+  margin: 8% 0;
+}
+
+.links-footer{
+  text-decoration: none;
+  color: white;
+  margin: 5% 0;
+}
+
+.links-footer:hover{
+  text-decoration: none;
+  color: #f7b617;
+  transition: 0.5s
+}
+
+.footer-spacio{
+  height: 25vh;
+}
+
+.logos-footer{
+  margin-top: 20%;
+}
+
+.img-logos{
+  width: 24vh;
+  margin: 3% 0;
+}

@@ -1,26 +1,4 @@
-function initMap(){/* initMap inicializa el mapa */
-  var map = new google.maps.Map(document.getElementById("map"),{/* NOTA: van comas */
-    zoom:5,// nivel de profundidad de nuestro mapa. + zoom localizado se ve 
-    center: {lat: -9.1191427, lng: -77.0349046},//longitud y latitud en que queremos que se muestre nuestro mapa
-    mapTypeControl: false,
-    zoomControl:false,
-    streetViewControl:false
-  });
-
-//Llamar id's de los input de origen y destino
-  var inicio = document.getElementById("origen");
-  var fin = document.getElementById("destino");
-
-  var autocomplete = new google.maps.places.Autocomplete(inicio);
-  autocomplete.bindTo("bounds",map)
-
-  var autocomplete = new google.maps.places.Autocomplete(fin);
-  autocomplete.bindTo("bounds",map)
-
-//Funcion que busca ubicacion
-  function buscar(){/* va dentro de initMap() */
-    if(navigator.geolocation){
-      navigator.geolocation.getCurrentPosition(funcionExito,funcionError);
+,funcionError);
     }
   }
   /*  getCurrentPosition permite saber ubicacion actual del user
